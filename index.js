@@ -3,7 +3,7 @@
  * For licensing, see LICENSE
  */
 
-import axios from 'axios'
+const axios=require('axios')
 
 /**
  * Sends SMS messages to one or more recipients
