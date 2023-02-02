@@ -1,6 +1,30 @@
-# MiaJupiter Sms authentication via Verimor
+# MiaJupiter Sms authentication/verification
 
-Sms atuhentication package
+>Note: This package supports only Verimor Sms service.
+
+github: https://github.com/miajupiter/sms-auth-verimor
+
+
+## Table of contents
+
+- [Install](#install)
+- [Send Authentication Code](#send-authentication-code)
+- [Send SMS](#send-sms)
+- [Generating auth code](#generating-auth-code)
+- [Is valid phone number](#is-valid-phone-number)
+
+## Install
+
+[From github](https://github.com/miajupiter/sms-auth-verimor)
+```bash
+npm install https://github.com/miajupiter/sms-auth-verimor.git
+```
+
+From npm source
+```bash
+npm install @miajupiter/sms-auth-verimor
+```
+
 
 ## Send Authentication Code
 ```js
@@ -21,9 +45,6 @@ sms.sendAuthCode(username, password, recipient, messageTemplate)
 // Random generated auth code sent to target phone number
 474639  
 ```
-
-
-
 
 ## Send SMS
 ```js

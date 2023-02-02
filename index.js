@@ -1,6 +1,6 @@
 /**
  * @license Copyright (c) 2023-Now, MiaJupiter Technology. All rights reserved.
- * For licensing, see LICENSE
+ * For licensing, see LICENSE file in the root directory of this source tree.
  */
 
 const axios = require('axios')
