@@ -67,8 +67,10 @@ sms.sendSms({
 ```
 
 > Output:
-```json
+```
 HttpStatus: 200 OK
+```
+```json
 { status: 200, data: 318438489 }
 ```
 
