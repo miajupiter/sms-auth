@@ -1,32 +1,37 @@
+
 # MiaJupiter Sms authentication/verification
 
 >Note: This package supports only Verimor Sms service.
 
-github: https://github.com/miajupiter/sms-auth-verimor
-
+[miajupiter.com](https://miajupiter.com) |
+[npm package](https://www.npmjs.com/package/miajupiter-sms-auth-verimor) |
+[documentation](https://github.com/miajupiter/sms-auth-verimor#readme)
 
 ## Table of contents
 
-- [Install](#install)
-- [Send Authentication Code](#send-authentication-code)
-- [Send SMS](#send-sms)
-- [Generating auth code](#generating-auth-code)
-- [Is valid phone number](#is-valid-phone-number)
+- [Installing](#installing)
+- [API Functions](#api-functions)
+  - [Send Authentication Code](#send-authentication-code)
+  - [Send SMS](#send-sms)
+  - [Generating auth code](#generating-auth-code)
+  - [Is valid phone number?](#is-valid-phone-number)
+- [License - MIT License](#license---mit-license)
 
-## Install
 
+## Installing
+
+[From npm source](https://www.npmjs.com/package/miajupiter-sms-auth-verimor)
+```bash
+npm install miajupiter-sms-auth-verimor
+```
 [From github](https://github.com/miajupiter/sms-auth-verimor)
 ```bash
 npm install https://github.com/miajupiter/sms-auth-verimor.git
 ```
 
-From npm source
-```bash
-npm install @miajupiter/sms-auth-verimor
-```
+## API Functions
 
-
-## Send Authentication Code
+### Send Authentication Code
 ```js
 const sms=require('@miajupiter/sms-auth-verimor')
 
@@ -46,7 +51,7 @@ sms.sendAuthCode(username, password, recipient, messageTemplate)
 474639  
 ```
 
-## Send SMS
+### Send SMS
 ```js
 const sms=require('@miajupiter/sms-auth-verimor')
 
@@ -73,7 +78,7 @@ HttpStatus: 200 OK
 { status: 200, data: 318438489 }
 ```
 
-## Generating auth code
+### Generating auth code
 ```js
 const sms=require('@miajupiter/sms-auth-verimor')
 
@@ -88,7 +93,7 @@ console.log(authCode)
 474639
 ```
 
-## Is valid phone number
+### Is valid phone number?
 ```js
 const sms=require('@miajupiter/sms-auth-verimor')
 
@@ -102,3 +107,8 @@ console.log(`Is '${phoneNumber}' valid phone number? Result:`, sms.validPhoneNum
 ```console
 Is '101111111111' valid phone number? Result: false
 ```
+
+
+## License - MIT License
+
+Copyright (c) 2023-**Now** [MiaJupiter Technology](https://miajupiter.com). All rights reserved. We are proud to be [Open Source](https://opensource.org). For full details about the license, please check the `LICENSE` file in the root directory of the source repository.

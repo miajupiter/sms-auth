@@ -1,5 +1,5 @@
 {
-  "name": "@miajupiter/sms-auth-verimor",
+  "name": "miajupiter-sms-auth-verimor",
   "version": "1.0.0",
   "description": "MiaJupiter Sms authentication",
   "main": "index.js",
