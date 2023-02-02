@@ -3,25 +3,31 @@
 Sms atuhentication package
 
 ## Send Authentication Code
-```javascript
-import sms from '@miajupiter/sms-auth-verimor'
+```js
+const sms=require('@miajupiter/sms-auth-verimor')
 
 const messageTemplate='This is your auth code:{authCode}'
 const username='' // verimor username
 const password='' // verimor password
+const recipient='target phone number'
 
 sms.sendAuthCode(username, password, recipient, messageTemplate)
   .then(resp=>console.log(resp))
   .catch(err=>console.error(err))
+```
+> Output:
 
+```js
+// Random generated auth code sent to target phone number
+474639  
 ```
 
 
 
 
 ## Send SMS
-```javascript
-import sms from '@miajupiter/sms-auth-verimor'
+```js
+const sms=require('@miajupiter/sms-auth-verimor')
 
 sms.sendSms({
     url:'https://sms.verimor.com.tr/v2/send.json',
@@ -39,9 +45,15 @@ sms.sendSms({
 
 ```
 
+> Output:
+```json
+HttpStatus: 200 OK
+{ status: 200, data: 318438489 }
+```
+
 ## Generating auth code
-```javascript
-import sms from '@miajupiter/sms-auth-verimor'
+```js
+const sms=require('@miajupiter/sms-auth-verimor')
 
 const authCode = sms.generateAuthCode()
 
@@ -49,4 +61,22 @@ console.log(authCode)
 ```
 > Output:
 
-`474639`
+```js
+// Generate auth code
+474639
+```
+
+## Is valid phone number
+```js
+const sms=require('@miajupiter/sms-auth-verimor')
+
+const phoneNumber = '101111111111'
+
+console.log(`Is '${phoneNumber}' valid phone number? Result:`, sms.validPhoneNumber())
+```
+
+> Output:
+
+```console
+Is '101111111111' valid phone number? Result: false
+```

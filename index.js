@@ -3,7 +3,7 @@
  * For licensing, see LICENSE
  */
 
-const axios=require('axios')
+const axios = require('axios')
 
 /**
  * Sends SMS messages to one or more recipients
@@ -29,10 +29,10 @@ exports.sendSms = (options) => new Promise((resolve, reject) => {
     method: options.method || 'POST',
     headers: { 'Content-Type': 'application/json; charset=utf-8' },
     rejectUnauthorized: false,
-    data: JSON.stringify(data),
+    data: JSON.stringify(options.data),
     timeout: 50000
   })
-    .then(resolve)
+    .then(resp => resolve({ status: resp.status, data: resp.data }))
     .catch(reject)
 })
 
@@ -63,17 +63,17 @@ exports.sendAuthCode = (username, password, recipient, messageTemplate) => new P
     let authCode = exports.generateAuthCode()
     msg = msg.replaceAll('{authCode}', authCode)
     exports.sendSms({
-      data:{
+      data: {
         username: username,
         password: password,
-        messages:[{
-          dest:recipient,
-          msg:msg
+        messages: [{
+          dest: recipient,
+          msg: msg
         }]
       }
     })
-    .then(()=>resolve(authCode))
-    .catch(reject)
+      .then(() => resolve(authCode))
+      .catch(reject)
 
   } else {
     reject('Invalid phone number')
@@ -88,7 +88,7 @@ exports.sendAuthCode = (username, password, recipient, messageTemplate) => new P
  */
 
 exports.validPhoneNumber = function (tel) {
-  if (tel.trim() == '') return false
+  if ((tel || '').trim() == '') return false
   var bFound = false
   for (var i = 0; i < tel.length; i++) {
     if (!((tel[i] >= '0' && tel[i] <= '9') || tel[i] == '+')) {
