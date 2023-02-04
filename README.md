@@ -1,8 +1,8 @@
 
 # MiaJupiter Sms authentication/verification
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiajupiter%2Fsms-auth-verimor&count_bg=%236495ED&title_bg=%23323232&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiajupiter%2Fsms-auth&count_bg=%236495ED&title_bg=%23323232&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-[miajupiter.com](https://miajupiter.com) | [npm package](https://www.npmjs.com/package/miajupiter-sms-auth-verimor) | [documentation](https://github.com/miajupiter/sms-auth-verimor#readme)
+[miajupiter.com](https://miajupiter.com) | [npm package](https://www.npmjs.com/package/miajupiter-sms-auth) | [documentation](https://github.com/miajupiter/sms-auth#readme)
 
 
 >Note: This package supports only Verimor Sms service.
@@ -21,20 +21,20 @@
 
 ## Installing
 
-[From npm source](https://www.npmjs.com/package/sms-auth-verimor)
+[From npm source](https://www.npmjs.com/package/sms-auth)
 ```bash
-npm install sms-auth-verimor
+npm install sms-auth
 ```
-[From github](https://github.com/miajupiter/sms-auth-verimor)
+[From github](https://github.com/miajupiter/sms-auth)
 ```bash
-npm install https://github.com/miajupiter/sms-auth-verimor.git
+npm install https://github.com/miajupiter/sms-auth.git
 ```
 
 ## API Functions
 
 ### Send Authentication Code
 ```js
-const sms=require('sms-auth-verimor')
+const sms=require('sms-auth')
 
 const messageTemplate='This is your auth code:{authCode}'
 const username='' // verimor username
@@ -54,7 +54,7 @@ sms.sendAuthCode(username, password, recipient, messageTemplate)
 
 ### Send SMS
 ```js
-const sms=require('sms-auth-verimor')
+const sms=require('sms-auth')
 
 sms.sendSms({
     url:'https://sms.verimor.com.tr/v2/send.json',
@@ -81,7 +81,7 @@ HttpStatus: 200 OK
 
 ### Generating auth code
 ```js
-const sms=require('sms-auth-verimor')
+const sms=require('sms-auth')
 
 const authCode = sms.generateAuthCode()
 
@@ -96,7 +96,7 @@ console.log(authCode)
 
 ### Is valid phone number?
 ```js
-const sms=require('sms-auth-verimor')
+const sms=require('sms-auth')
 
 const phoneNumber = '101111111111'
 
