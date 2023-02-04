@@ -1,6 +1,6 @@
-
 # MiaJupiter Sms Send AuthCode
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiajupiter%2Fsms-auth&count_bg=%236495ED&title_bg=%23323232&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+<a href="https://www.npmjs.com/package/sms-auth"><img src="https://img.shields.io/npm/v/sms-auth" alt="NPM Version" /></a> <a href="https://www.npmjs.com/package/sms-auth"><img src="https://img.shields.io/npm/dm/sms-auth" alt="NPM Downloads" /></a>  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiajupiter%2Fsms-auth&count_bg=%236495ED&title_bg=%23323232&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 [miajupiter.com](https://miajupiter.com) | [npm package](https://www.npmjs.com/package/sms-auth) | [documentation](https://github.com/miajupiter/sms-auth#readme)
 
@@ -10,7 +10,7 @@
 
 ## Table of contents
 
-- [Installing](#installing)
+- [Install](#install)
 - [API Functions](#api-functions)
   - [Send Authentication Code](#send-authentication-code)
   - [Send SMS](#send-sms)
@@ -19,7 +19,7 @@
 - [License - MIT License](#license---mit-license)
 
 
-## Installing
+## Install
 
 [From npm source](https://www.npmjs.com/package/sms-auth)
 ```bash
