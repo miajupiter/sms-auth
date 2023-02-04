@@ -1,8 +1,8 @@
 
-# MiaJupiter Sms authentication/verification
+# MiaJupiter Sms Send AuthCode
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiajupiter%2Fsms-auth&count_bg=%236495ED&title_bg=%23323232&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-[miajupiter.com](https://miajupiter.com) | [npm package](https://www.npmjs.com/package/miajupiter-sms-auth) | [documentation](https://github.com/miajupiter/sms-auth#readme)
+[miajupiter.com](https://miajupiter.com) | [npm package](https://www.npmjs.com/package/sms-auth) | [documentation](https://github.com/miajupiter/sms-auth#readme)
 
 
 >Note: This package supports only Verimor Sms service.
@@ -37,8 +37,8 @@ npm install https://github.com/miajupiter/sms-auth.git
 const sms=require('sms-auth')
 
 const messageTemplate='This is your auth code:{authCode}'
-const username='' // verimor username
-const password='' // verimor password
+const username='' // sms service username
+const password='' // sms service password
 const recipient='target phone number'
 
 sms.sendAuthCode(username, password, recipient, messageTemplate)
