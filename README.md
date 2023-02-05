@@ -1,15 +1,14 @@
 <p align="center">
 <a href="https://miajupiter.com" _target="blank">
-<img src="https://github.com/miajupiter/.github/raw/main/images/miajupiter-logo.png"  width="400" />
+<img src="https://github.com/miajupiter/.github/raw/main/images/miajupiter-logo.png"  width="320" />
 </a>
 
 ----
 
 
 # Sms Send AuthCode
-![enter image description here](https://img.shields.io/badge/website-miajupiter.com-green.svg) ![npm](https://img.shields.io/npm/v/sms-auth) ![npm](https://img.shields.io/npm/dt/sms-auth) ![GitHub](https://img.shields.io/github/license/miajupiter/sms-auth) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiajupiter%2Fsms-auth&count_bg=%236495ED&title_bg=%23323232&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-[![](https://img.shields.io/badge/documents-cornflowerblue.svg)](https://github.com/miajupiter/sms-auth#readme)
+[![](https://img.shields.io/badge/website-miajupiter.com-yellowgreen.svg)](https://miajupiter.com) ![npm](https://img.shields.io/npm/v/sms-auth) <a href="https://www.npmjs.com/package/sms-auth"><img src="https://img.shields.io/npm/dm/sms-auth" alt="NPM Downloads" /></a> ![GitHub](https://img.shields.io/github/license/miajupiter/sms-auth) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiajupiter%2Fsms-auth&count_bg=%236495ED&title_bg=%23323232&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) [![](https://img.shields.io/badge/readme-docs-chocolate.svg)](https://github.com/miajupiter/sms-auth#readme)
 
 
 >Note: This package supports only Verimor Sms service.
@@ -107,16 +106,18 @@ const sms=require('sms-auth')
 
 const phoneNumber = '101111111111'
 
-console.log(`Is '${phoneNumber}' valid phone number? Result:`, sms.validPhoneNumber())
+console.log(`Is '${phoneNumber}' valid phone number?\nResult:`, sms.validPhoneNumber())
 ```
 
 > Output:
 
-```console
-Is '101111111111' valid phone number? Result: false
+```bash
+Is '101111111111' valid phone number?
+
+Result: false
 ```
 
 
 ## License - MIT License
 
-Copyright (c) 2023-**Now** [MiaJupiter Technology](https://miajupiter.com). All rights reserved. We are proud to be [Open Source](https://opensource.org). For full details about the license, please check the `LICENSE` file in the root directory of the source repository.
+Copyright (c) 2023-**Now** [MiaJupiter Technology Inc.](https://miajupiter.com). All rights reserved. We are proud to be [Open Source](https://opensource.org). For full details about the license, please check the `LICENSE` file in the root directory of the source repository.
