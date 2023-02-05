@@ -1,8 +1,15 @@
-# MiaJupiter Sms Send AuthCode
+<p align="center">
+<a href="https://miajupiter.com" _target="blank">
+<img src="https://github.com/miajupiter/.github/raw/main/images/miajupiter-logo.png"  width="400" />
+</a>
 
-<a href="https://www.npmjs.com/package/sms-auth"><img src="https://img.shields.io/npm/v/sms-auth" alt="NPM Version" /></a> <a href="https://www.npmjs.com/package/sms-auth"><img src="https://img.shields.io/npm/dm/sms-auth" alt="NPM Downloads" /></a>  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiajupiter%2Fsms-auth&count_bg=%236495ED&title_bg=%23323232&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+----
 
-[miajupiter.com](https://miajupiter.com) | [npm package](https://www.npmjs.com/package/sms-auth) | [documentation](https://github.com/miajupiter/sms-auth#readme)
+
+# Sms Send AuthCode
+![enter image description here](https://img.shields.io/badge/website-miajupiter.com-green.svg) ![npm](https://img.shields.io/npm/v/sms-auth) ![npm](https://img.shields.io/npm/dt/sms-auth) ![GitHub](https://img.shields.io/github/license/miajupiter/sms-auth) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fmiajupiter%2Fsms-auth&count_bg=%236495ED&title_bg=%23323232&icon=cliqz.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+[![](https://img.shields.io/badge/documents-cornflowerblue.svg)](https://github.com/miajupiter/sms-auth#readme)
 
 
 >Note: This package supports only Verimor Sms service.
